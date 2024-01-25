@@ -16,49 +16,11 @@
 
 </head>
 
-<body <?php body_class($body_class); ?> data-site-url="<?= site_url(); ?>">
+<body <?php body_class(); ?> data-site-url="<?= site_url(); ?>">
 
 
     <?php wp_body_open(); ?>
 
     <header>
-        <div class="content">
-            <div class="logo w-25">
-                <?php the_custom_logo() ?>
-            </div>
-
-            <div href="<?php echo wc_get_cart_url(); ?>" class="basketicon"
-                title="<?php _e('View your shopping cart'); ?>">
-                <img src="https://staging2.analoguerevival.co.uk/wp-content/uploads/2024/01/568122.png"
-                    class="basketicon__icon"></img>
-                <div class="basketicon__total">
-                    <div class="woocommerce mini-cart">
-                        <div class="widget_shopping_cart_content">
-                            <?php woocommerce_mini_cart(); ?>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="mobile-menu">
-                    <button class="hamburger hamburger--collapse" type="button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
-                    <div class="burger-menu">
-                        <?php
-                        wp_nav_menu(
-                            array(
-                                'menu' => "Desktop Menu",
-                                'menu_class' => "mobile-menu positioning-class-menu d-flex",
-                                'container' => 0,
-                                'container_class' => 0,
-                            )
-                        );
-                        ?>
-                    </div>
-
-                </div>
-        </div>
+        <a href="#">hello</a>
     </header>

@@ -8,14 +8,17 @@ $darkSecondary : #104131;
 $tertiary : #186a62;
 $white : #fff;
 $grey : #cdcdcd;
-
+$bg : #ff8c8c;
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;1,700&family=Bitter:ital,wght@0,900;1,900&display=swap');
-$headingFont : 'Afacad',
+$font : 'Afacad',
 sans-serif;
-$font : 'Bitter',
+$headingFont : 'Bitter',
 serif;
+$bold : 700;
 
+// Imports
+@import "./assets/sass/header";
 
 * {
   margin: 0;
@@ -25,7 +28,7 @@ serif;
 }
 
 html {
-  background-color: $primary;
+  background-color: $bg;
 }
 
 h1,
@@ -39,4 +42,8 @@ h6 {
 
 a, p, li, span, strong {
   font-family: $font;
+}
+
+a {
+  color: $highlight;
 }

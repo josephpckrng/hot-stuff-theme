@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;1,700&family=Bitter:ital,wght@0,900;1,900&display=swap");
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  border-right: 2px dashed #ffeebd;
+  height: 100vh;
+}
+header a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +23,24 @@
 }
 
 html {
-  background-color: #eebd8b;
+  background-color: #ff8c8c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter", serif;
+}
+
+a, p, li, span, strong {
+  font-family: "Afacad", sans-serif;
+}
+
+a {
+  color: #ffeebd;
 }
 
 /*# sourceMappingURL=style.css.map */
