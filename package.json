@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "latest": "^0.2.0",
+    "nvm": "^0.0.4",
+    "open-props": "^1.6.17",
+    "sass": "^1.70.0"
+  },
+  "name": "hot-stuff-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass style.scss style.css",
+    "watch": "sass --watch style.scss style.css --style compressed"
+  },
+  "author": "JP",
+  "license": "ISC",
+  "description": ""
+}

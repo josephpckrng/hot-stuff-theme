@@ -1,0 +1,42 @@
+// Colours
+$primary : #eebd8b;
+$darkPrimary : #ee9c39;
+$darkAlt : #5a3920;
+$highlight : #ffeebd;
+$secondary : #20a47b;
+$darkSecondary : #104131;
+$tertiary : #186a62;
+$white : #fff;
+$grey : #cdcdcd;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;1,700&family=Bitter:ital,wght@0,900;1,900&display=swap');
+$headingFont : 'Afacad',
+sans-serif;
+$font : 'Bitter',
+serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+html {
+  background-color: $primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headingFont;
+}
+
+a, p, li, span, strong {
+  font-family: $font;
+}
