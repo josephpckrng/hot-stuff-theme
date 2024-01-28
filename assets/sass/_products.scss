@@ -1,0 +1,19 @@
+.flexible-products{
+    * {
+        font-family: $font;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+    .product {
+        &.name {
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+    }
+}

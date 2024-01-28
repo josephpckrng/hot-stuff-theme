@@ -22,5 +22,6 @@
     <?php wp_body_open(); ?>
 
     <header>
-        <a href="#">hello</a>
+        <a href="#">HSC  <span class="spin">*</span></a>
+      
     </header>

@@ -2,13 +2,13 @@
 $primary : #eebd8b;
 $darkPrimary : #ee9c39;
 $darkAlt : #5a3920;
-$highlight : #ffeebd;
+$highlight : #EC3A2A;
 $secondary : #20a47b;
 $darkSecondary : #104131;
 $tertiary : #186a62;
 $white : #fff;
 $grey : #cdcdcd;
-$bg : #ff8c8c;
+$bg : #FCFBE3;
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;1,700&family=Bitter:ital,wght@0,900;1,900&display=swap');
 $font : 'Afacad',
@@ -19,6 +19,9 @@ $bold : 700;
 
 // Imports
 @import "./assets/sass/header";
+@import "./assets/sass/products";
+@import "./assets/sass/full-width";
+
 
 * {
   margin: 0;
@@ -27,8 +30,10 @@ $bold : 700;
   font-size: 18px;
 }
 
-html {
+html,
+body {
   background-color: $bg;
+  overflow-x: hidden;
 }
 
 h1,
@@ -40,10 +45,42 @@ h6 {
   font-family: $headingFont;
 }
 
-a, p, li, span, strong {
+a,
+p,
+li,
+span,
+strong {
   font-family: $font;
 }
 
 a {
   color: $highlight;
+}
+
+section {
+  margin: 50px 0;
+  padding: 0 5vw 0 25vw;
+}
+
+span.spin  {
+  width: 100px;
+  height: 100px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  font-size: 8rem;
+  display: flex;
+  padding-top: 31px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg); 
+    }
 }

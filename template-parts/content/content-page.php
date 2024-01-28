@@ -16,8 +16,8 @@ if(get_row_layout() === 'flexible_columns') :
     get_template_part('template-parts/flexible-columns/columns/flexible-column');
 endif;
 
-if(get_row_layout() === 'primary_banner') :
-    get_template_part('template-parts/full-width/primary-banner');
+if(get_row_layout() === 'home_banner') :
+    get_template_part('template-parts/banners/home-banner');
 endif;
 
 if(get_row_layout() === 'tertiary_banner') :

@@ -1,12 +1,12 @@
 <!-- vars -->
 <?php $col = get_sub_field('column_width'); ?>
-<section class="flexible-products col-lg-<?= $col ?>">
+<section class="flexible-products row">
         <?php
         $stores = get_sub_field('products'); // your Relationship field
         if ($stores) {
             foreach ($stores as $post) {
                 $link = get_the_permalink(get_the_ID());
-                echo '<a href="' . $link . '" class="card-wrapper">';
+                echo '<a href="' . $link . '" class="card-wrapper col-lg-' . $col  . '">';
                 echo get_the_post_thumbnail();
                 echo '<div class="product-text-wrapper">';
                 $product = new WC_Product($post->ID);
