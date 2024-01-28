@@ -7,7 +7,8 @@
     "nvm": "^0.0.4",
     "open-props": "^1.6.17",
     "sass": "^1.70.0",
-    "scrollmagic": "^2.0.8"
+    "scrollmagic": "^2.0.8",
+    "swiper": "^11.0.5"
   },
   "name": "hot-stuff-theme",
   "version": "1.0.0",

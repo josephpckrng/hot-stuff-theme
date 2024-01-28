@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
 }
 
 get_header('shop'); ?>
-<div class="content">
+<section class="content">
 
 	<?php
 	/**

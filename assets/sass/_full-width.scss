@@ -9,19 +9,129 @@
         justify-content: center;
         flex-direction: column;
         justify-content: space-evenly;
-        .button {
-            border: 2px dotted;
-            padding: 10px 30px;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
+
+        .link-container {
+            text-align: center;
+
+            .button {
+                border: 2px dotted;
+                padding: 10px 30px;
+                text-decoration: none;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
         }
+
         .title-wrapper {
             color: $highlight;
             text-align: center;
+
             h1 {
                 font-size: 5rem;
             }
+
+            h2 {
+                margin: 35px 0;
+                font-size: 2.75rem;
+            }
         }
     }
+}
+
+.single_add_to_cart_button, .input-text, .input-text:focus-visible {
+    border: 2px dotted $highlight !important;
+    color: $highlight !important;
+    padding: 10px 30px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    background-color: transparent !important;
+    font-family: $font !important;
+    margin: 20px 0 !important;
+}
+
+.woocommerce-product-gallery {
+    margin-right: 50px !important;
+}
+
+.product_title {
+    color: $highlight !important;
+}
+
+bdi {
+    font-family: $headingFont !important;
+    color: $highlight;
+    font-size: 2.75rem;
+}
+bdi {
+    span {
+        font-family: $headingFont !important;
+        color: $highlight;
+        font-size: 2.75rem;
+    }
+}
+
+.input-text  {
+    min-width: 100px !important;
+}
+
+.input-text:focus-visible {
+    outline: none !important;
+}
+
+/* Style the input number arrows */
+.quantity input[type="number"]::-webkit-inner-spin-button,
+.quantity input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Style for Firefox */
+.quantity input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Customize the appearance of the input number */
+.quantity input[type="number"] {
+    appearance: textfield;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    width: 50px; /* Adjust the width as needed */
+    text-align: center;
+    font-size: 16px; /* Adjust the font size as needed */
+    height: 40px; /* Adjust the height as needed */
+    border: 1px solid #ccc; /* Add a border if desired */
+    border-radius: 4px; /* Add border-radius if desired */
+}
+
+/* Style the increment and decrement buttons */
+.quantity input[type="number"]::-webkit-inner-spin-button,
+.quantity input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Increase the size of the arrows */
+.quantity input[type="number"]::-webkit-inner-spin-button,
+.quantity input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/* Style the arrows (you can use custom images or icons) */
+.quantity input[type="number"]::-webkit-inner-spin-button:after,
+.quantity input[type="number"]::-webkit-outer-spin-button:after {
+    content: '\25B2'; /* Unicode character for up arrow */
+    color: #333; /* Arrow color */
+    font-size: 14px; /* Adjust the arrow size as needed */
+}
+
+.quantity input[type="number"]::-webkit-inner-spin-button:before,
+.quantity input[type="number"]::-webkit-outer-spin-button:before {
+    content: '\25BC'; /* Unicode character for down arrow */
+    color: #333; /* Arrow color */
+    font-size: 14px; /* Adjust the arrow size as needed */
 }
